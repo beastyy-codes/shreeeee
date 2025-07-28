@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>For You, My Love</title>
+  <style>
+    body {
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center center/cover no-repeat, 
+                  linear-gradient(120deg, #ffb6b9cc 0%, #fcd5cecc 100%);
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 30%, #fffbe5cc 0%, transparent 75%);
+      z-index: 1;
+      pointer-events: none;
+    }
+    .container {
+        background: rgba(255,255,255,0.65);
+        box-shadow: 0 4px 32px rgba(255, 182, 185, 0.15);
+        border-radius: 22px;
+        padding: 52px 32px 38px 32px;
+        max-width: 480px;
+        text-align: center;
+        overflow: visible;
+        animation: fadeIn 1.5s;
+        position: relative;
+        z-index: 2;
+    }
+
+    h1 {
+      color: #f67280;
+      margin-bottom: 16px;
+      font-size: 2.25em;
+      letter-spacing: 1px;
+      animation: slideInFromLeft 0.95s;
+    }
+    p {
+      color: #333;
+      font-size: 1.16em;
+      margin-bottom: 44px;
+      line-height: 1.7em;
+      animation: slideInFromRight 1.2s;
+      animation-delay: 0.5s;
+      opacity: 0;
+      animation-fill-mode: forwards;
+    }
+    .heart {
+      font-size: 3.6em;
+      color: #ff6f91;
+      animation: heartGlow 1.6s infinite alternate;
+      text-shadow: 0 0 10px #ffb6b9, 0 0 24px #ffd6d6;
+    }
+    .cat-gallery {
+      margin-bottom: 16px;
+    }
+    .cat-img {
+      width: 78px;
+      height: 78px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin: 0 10px;
+      box-shadow: 0 0 12px #fcd5ce88;
+      filter: drop-shadow(0 3px 5px rgba(0,0,0,0.09));
+      background: #fffefa;
+      vertical-align: middle;
+      transition: transform 0.18s;
+      border: 2.5px solid #fbeeac;
+      animation: floatCat 3.2s ease-in-out infinite alternate;
+    }
+    .cat-img:last-child {
+      animation-delay: 1.2s;
+    }
+    .cat-img:hover {
+      transform: scale(1.13) rotate(-5deg);
+      border-color: #f6a769;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(36px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @keyframes slideInFromLeft {
+      0% {opacity: 0; transform: translateX(-56px);}
+      100% {opacity: 1; transform: translateX(0);}
+    }
+    @keyframes slideInFromRight {
+      0% {opacity: 0; transform: translateX(42px);}
+      100% {opacity: 1; transform: translateX(0);}
+    }
+    @keyframes heartGlow {
+      0% { filter: drop-shadow(0 0 8px #ffd6d6); }
+      100% { filter: drop-shadow(0 0 18px #ffe394); }
+    }
+    @keyframes floatCat {
+      0%, 100% { transform: translateY(0);}
+      50% { transform: translateY(-16px);}
+    }
+    .footer-note {
+      font-size: 1em;
+      color: #a998a9;
+      margin-top: 16px;
+      opacity: 0.77;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="heart">❤️</div>
+    <div class="cat-gallery">
+      <img class="cat-img" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnZ5aWw4aTV0dnVoZm5zN2lwanlnMmF5d211YmdnYmd0cmU3d3hmNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/M9yC8b0x7Y7oA/giphy.gif" alt="Emotional animated cat hugging" title="Cat hug GIF">
+      <img class="cat-img" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnpyYWhjbWcycmw1YWFqZnBzZmJzcnN1a3E2OHRvOXY0bms4ZDA4YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/I1nwVpCaB4k36/giphy.gif" alt="Sad animated cat" title="Sad cat GIF">
+    </div>
+    <h1>To the Most Precious Part of My Life</h1>
+    <p>
+      I am so deeply sorry for hurting you.<br>
+      I never meant to cause you any pain. When I see you sad, my heart aches too.<br><br>
+      You are my sunshine, my inspiration, and my safe place. My love for you is endless and true.<br>
+      I miss your smile and your warmth beside me.<br>
+      I promise to listen, to understand, and to show you each day how much you mean to me.<br>
+      Please forgive me, <span style="color:#ff6f91;font-weight:bold;">My Baby Kangaroo</span> :( — I cherish you more than words can say, every single day.<br>
+      <span style="color:#ff6f91;font-weight:bold;">I love you more than you’ll ever know.</span>
+    </p>
+    <div class="heart">💖</div>
+    <div class="footer-note">This is for you, with all my love and hope.</div>
+  </div>
+</body>
+</html>
